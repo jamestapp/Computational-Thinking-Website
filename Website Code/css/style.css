@@ -1,0 +1,294 @@
+/*document styles*/
+
+:root {
+    --silver: #838996;
+    --white: white;
+    --black: rgb(0,0,0);
+    --navy: hsl(240, 100%, 25%);
+}
+/*
+(MDN, 2022)
+(W3 Schools, 2020)
+*/
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--black);
+}
+
+/* header styles */
+
+header {
+    color: var(--white);
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    z-index: 1; /*codecademy, 2022*/
+    position: fixed;
+    top: 0px;
+    background-image: linear-gradient(180deg, var(--black), var(--silver), var(--black));
+}
+
+header h1 {
+    text-decoration: underline; /*javatpoint, 2020*/
+}
+
+nav ul {
+    list-style-type: none;
+    margin: auto;
+    padding: auto;
+}
+
+nav li {
+    display: inline-block;
+    color:var(--black);
+    background-color: var(--white);
+    border-color: var(--silver);
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px; /*codecadamy, 2022*/
+    margin: 5px, 10px;
+    padding: 5px, 0;
+    width: 15%;
+}
+
+nav li:hover {
+    background-color: var(--black);
+    color: var(--white);
+    transition: all 400ms linear 200ms;
+    /*MDN, 2022*/
+}
+
+/*main styles*/
+main {
+    padding: 5%;
+    background-color: var(--white);
+    width: 100%;
+    margin: 0;
+    position: relative;
+    top: 100px;
+}
+
+main em {
+    font-style: italic;
+}
+
+main p {
+    color: var(--black);
+}
+
+main ul {
+    list-style-type: circle;
+    /*W3 Schools, 2017*/
+}
+
+main b {
+    font-weight: 700;
+}
+
+.image {
+    border-color: var(--black);
+    border-style: double;
+    border-width: 10px;
+    padding: 0 20px 20px;
+}
+
+figcaption {
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 10px;
+    color: var(--navy);
+}
+
+.map {
+    display: inline-block;
+    width: 45%;
+}
+
+#imaginary {
+    width: 30%;
+}
+
+#real {
+    width: 60%;
+    margin-right: 0;
+    margin-left: 5%;
+}
+
+blockquote {
+    font-style: italic;
+    box-shadow: 0 0 6px; /* W3 Schools, 2022*/
+    padding: 5%;
+    margin: auto;
+    width: 70%;
+    text-align: justify;
+    font-size: 20px;
+}
+
+blockquote:before { 
+    position: relative;
+    display: block;
+    font-size: 40px;
+    color: var(--silver);
+    content: "“";
+    top: 0;
+    left: 0;
+}
+/*Soueidan, S., Codrops, 2015*/
+
+img {
+    margin: 10px auto;
+}
+
+/*Index/Intro to CT Specific Selectors */
+
+#pseudocode {
+    height: 300px;
+    width: 350px;
+    padding: 0;    
+    margin: auto;
+}
+
+#flowchart {
+    height: 410px;
+    width: 350px;
+    padding: 0;
+    margin: auto;
+} 
+
+.example figure{
+    height: 450px;
+    min-width: 300px;
+}
+
+.example {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+}/*Codecademy, 2022*/
+
+/* Four Colour Specific Selectors*/
+.half-page {
+    display: inline-block;
+    width: 45%;
+    margin: 0;
+}
+
+#imaginary {
+    width: 30%;
+}
+
+#real {
+    width: 60%;
+    margin-right: 0;
+    margin-left: 5%;
+}
+
+.contains-img {
+    height: 400px;
+}
+
+.wrap-text {
+    float: left;
+    width: 300px;
+    padding: 5px;
+}
+
+.wrap-text img {
+    width: 80%;
+    height: 70%;
+    margin: 0 10%;
+}
+
+.video-wrapper {
+    margin: auto;
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+iframe {
+    border-width: 5px;
+    border-color: var(--black);
+    border-style: dashed;
+    margin: 5px, 10px;
+    padding: 5px, 0;
+    height: 315px;
+    width: 560px;
+}
+
+/*References page specific selectors*/
+
+table {
+    table-layout: fixed;
+    margin: 10%;
+}
+
+table caption {
+    font-weight: bold;
+    font-size: 20px;;
+}
+
+table td {
+    word-break: break-all;
+    /*Marc Audet, 2013*/
+    padding: 2px;
+    text-align: center;
+}
+
+tr, td, tbody, thead, table {
+    border-collapse: collapse;
+    border: 2px solid var(--silver); 
+    /*MDN, 2022*/
+}
+
+thead th:nth-child(1) {
+    width: 15%;
+}
+
+thead th:nth-child(2) {
+    width: 85%;
+}
+/*MDN, 2022*/
+
+/*footer styles*/
+
+footer {
+    color: var(--silver);
+    background-color: var(--black);
+    height: 110px;
+    position: relative;
+    top: 100px;
+}
+
+footer h6 {
+    margin: 10px;
+    padding-left: 10px;
+}
+
+.half {
+    width: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+.left {
+    float: left;
+    text-align: left;
+}
+
+.right {
+    float: right;
+    text-align: right;
+}

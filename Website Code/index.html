@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CMT119 Coursework</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <meta name="description" content="Computational Thinking Project">
+        <meta name="keywords" content="HTML, CSS, Computational, Thinking">
+        <meta name="author" content="James Tapp">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--W3 Schools, 2022-->
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="icon" href="./img/webicon.png" type="image/icon type">
+    </head>
+    <body>
+        <header>
+            <section>
+                <h1>Computational Thinking Project</h1>
+            </section>
+            <nav>
+                <ul>
+                    <a href="index.html"><li>Introduction</li></a>
+                    <a href="fourcolours.html"><li>Four Colour Theorem</li></a>
+                    <a href="reflections.html"><li>Learning Reflections</li></a>
+                    <a href="references.html"><li>References</li></a>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <h3>Introduction to Computational Thinking</h3>
+                <p>For as long as computers have existed, Computer Scientists have used various terminology to define a method of thought used when working with computers. The term <b>Computational Thinking</b> (CT) was defined by Jeanette Wing in her seminal 2006 article in Communications of the ACM. She envisioned a fundamental skill that everyone would need to use in order to function in society. CT would be on a par with reading, writing and arithmetic in this sense. As using computers to problem solve becomes more common, this skill has indeed become vital to our modern world.</p>
+                <h4>What is CT?</h4>
+                <figure>
+                    <blockquote>Computational thinking is taking approaches to solving problems, designing systems, and understanding human behaviour that draw on the concepts fundamental to computer science.</blockquote>
+                    <figcaption><cite>Wing, J. (Communications of the ACM 49(3). 2006. p.33)</cite></figcaption>
+                </figure>
+                <p>The four main concepts that make up CT are:</p>
+                <ol>
+                    <li>Decomposition</li>
+                    <li>Pattern Recognition</li>
+                    <li>Abstraction</li>
+                    <li>Algorithmic Thinking</li>
+                </ol>
+                <h4>Decomposition</h4>
+                <p>This is about breaking a problem down into smaller components. The simpler the components, the easier our problem becomes. By separating parts of a complex system, we can understand it better and come up with more efficient and effective solutions.</p>
+                <h4>Pattern Recognition</h4>
+                <p>If we can spot similarities to issues we have encountered before, we are better placed to solve new issues more quickly and with less effort. We may also know to expect certain problems, and to plan around them if they cannot be avoided entirely.</p>
+                <h4>Abstraction</h4>
+                <p>The ability to separate the key ideas of a problem from any superfluous information. This is crucial to being able to identify and focus on the core of a problem, or even recognise that two problems could be fundamentally the same.</p>
+                <h4>Algorithms</h4>
+                <p>Applying our solution in a series of simple and effective steps makes them easy for both humans and computers to understand, and is quintessential to programming.</p>
+                <p>Also important to CT are the processes of Generalisation and Evaluation. This is how we make best use of a solution to a problem, and how can we be sure our solution is as good as possible in the case of Evaluation.</p>
+                <h4>What it is not</h4>
+                <p>We should also make some important distinctions, and counter common misconceptions.</p>
+                <ul>
+                    <li>CT is not programming. It is thinking like a computer scientist in its purest form</li>
+                    <li>CT is a specific way that humans solve problems using computers, not how computers think</li>
+                    <li>CT is envisioned as a fundamental skill, and something that everyone would need to know in modern society</li>
+                    <p>(Wing, 2006)</p>
+                </ul>
+                <h4>CT in Education and Careers</h4>
+                <p>I plan to use CT throughout my further learning of computing, as I am committed to learning to think in a way that can make the best use of computers to solve problems. This will help me throughout my MSc, and well beyond into my career afterwards as I encounter new and more challenging obstacles. Fundamentally, I want to acquire the skills necessary for a career in computing. Learning CT is the first step on that journey for expanding my problem-solving skills.</p>
+                <p>In my previous job as a System Analyst, I often needed to think computationally. Understanding the large scope of the software I helped develop was difficult for one person, and I frequently needed to decompose issues and abstract away detail from problems. Recognising patterns across the system helped me to find the causes of bugs, and identify inconsistencies. When designing system specs, I often thought algorithmically, writing flow charts for developers to implement in order to add new functionality.</p>
+                <p>In my future career I would like to build on this experience with a more sophisticated approach to using CT. Now that I have a better understanding of how to use computers to solve problems, I will be more efficient at tackling them and come up with better solutions. As I endeavour to become a Software Developer, I hope to be more involved in technical solutions and expect to use CT much more than in my previous career.</p>
+            </article>
+            <div>
+                <h4>Example</h4>
+                <p>Suppose we are tasked with making 100 cups of tea for a Cardiff University Computer Science event. How would we approach this problem in a <em>Computational</em> way?</p>
+                <p>Let us first separate the problem into smaller steps. We need to boil enough water for 100 cups of tea. We also need 100 mugs and 100 teabags for the tea, as well as a method of brewing the tea. Finally we would need a method of distributing the tea. Breaking the problem down in this way is a good example of <b>decomposition</b>.</p>
+                <p>We know from making individual cups of tea that it is best to let the tea brew for 3 minutes before serving. We also know that we will be able to get 10 mugs worth of water from our kettle at a time. This is information derived from <b>pattern recognition</b>, that will be useful in deriving our solution.</p>
+                <p>Who is the tea for? What will the patterns on the mugs look like? This is a level of detail that is unnecessary to the problem, and can be <b>abstracted</b> away. The main problem should be about making large quantities of tea.</p>
+                <p>Now we need to apply our solution in a simple, iterative manner.</p>
+                <ol>
+                    <li>Acquire 100 teabags and 100 mugs</li>
+                    <li>Boil 10 mugs of water</li>
+                    <li>Pour into 10 mugs</li>
+                    <li>Place teabags into the mugs</li>
+                    <li>Leave to brew for 3 minutes</li>
+                    <li>Serve the tea</li>
+                    <li>Repeat steps 2 to 6 until everyone is served</li>
+                </ol>
+                <p>This is the <b>algorithmic</b> thinking we could apply to implement our solution.</p>
+                <p>Have a look at the pseudocode and flowchart representations of the solution:</p>
+                <div class="example">
+                    <figure>
+                        <img src="./img/tea-flowchart-3.PNG" alt="A flowchart of our tea making algorithm" class="image" id="flowchart">
+                        <figcaption>Fig 1: Flowchart representation of our solution</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./img/tea-psueocode.PNG" alt="Example psuedocode of our tea making algorithm" class ="image" id="pseudocode">
+                        <figcaption>Fig 2: Pseudocode representation of our solution</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="left half">            
+                <h6>Website by James Alexander Tapp. Submitted for assessment on 4/11/2022</h6>
+                <h6>This site was created to showcase the contents of module CMT119 - Computational Thinking, MSc Computing Cardiff University.</h6>
+            </div>
+            <div class="right half">
+                <h6>C22076087</h6>
+            </div>
+        </footer>
+    </body>
+</html>

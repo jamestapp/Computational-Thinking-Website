@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CMT119 Coursework</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <meta name="description" content="Computational Thinking Project">
+        <meta name="keywords" content="HTML, CSS, Computational, Thinking">
+        <meta name="author" content="James Tapp">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--W3 Schools, 2022-->
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="icon" href="./img/webicon.png" type="image/icon type">
+    </head>
+    <body>
+        <header>
+            <section>
+                <h1>Computational Thinking Project</h1>
+            </section>
+            <nav>
+                <ul>
+                    <a href="index.html"><li>Introduction</li></a>
+                    <a href="fourcolours.html"><li>Four Colour Theorem</li></a>
+                    <a href="reflections.html"><li>Learning Reflections</li></a>
+                    <a href="references.html"><li>References</li></a>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <h3>Wolfgang Haken and the Four Colour Theorem</h3>
+                <figure>
+                    <blockquote>The four-colour problem is very simply stated, and has to do with the colouring of maps. Naturally, when colouring a map we wish to colour neighbouring countries differently so that we can tell them apart. So how many colours do we need to colour the entire map? … It seems that at most four colours are needed to colour any map. This, then, is the four-colour problem.</blockquote>
+                    <figcaption>- Robin Wilson: <cite>Four Colours Suffice, 2002</cite></figcaption>
+                </figure>
+                <p>Now we know what the four colour theorem is, lets have a look at some examples:</p>
+                <figure class="image">
+                    <img src="./img/Four_Colour_Map_Example.svg.png" class="half-page" id="imaginary" alt="An imaginary map of countries coloured in">
+                    <img src="./img/Map_of_United_States_accessible_colors_shown.svg.png" class="half-page" id="real" alt="A map of the USA coloured in">
+                    <figcaption>Fig 3: A map of the United States showing four colors, and an imaginary map coloured with four colours.<cite> (Derfel73, Dbenbenn, Strangerpete, inductiveload. 2021.), (Inductiveload, 2007).</cite> Both images licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA 3.0</a></figcaption>
+                </figure>
+                <p>For over 100 years serious mathematicians and amateur problem solvers attempted searched for a proof that any map could be coloured in with no more than four different colours. In 1976, the world finally found an answer from Wolfgang Haken and Kenneth Appel, Professors of Mathematics and Topology at the University of Illinois.</p>
+                <br>
+                <figure>
+                    <blockquote>When word of the proof of the Four Color Map Theorem reached college mathematics departments, instructors cut short their lectures and broke out champagne. Some days later they learned to their dismay that Appel and Haken's proof had made unprecedented use of high-speed computers: more than 1,000 hours logged among three machines.</blockquote>
+                    <figcaption>- Paul Hoffman: <cite>The Man Who Loved Only Numbers, 1998</cite></figcaption>
+                </figure>
+                <div class="contains-img">
+                    <figure class="wrap-text image">
+                        <img src="./img/Wolfgang_Haken.jpg" alt="Photograph of Wolfgang Haken" id="Haken">
+                        <figcaption>Fig 4:Wolfgang Haken discusses the four colour theorem with Marshall Pangilinan <cite>(Tori Egherman, 2019).</cite> Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></figcaption>
+                    </figure>
+                    <p>This was the first example of what we now call a  computer assisted proof. Checking 1,500 different maps is impossible for a human, but routine for machines. At the time it was unclear whether mathematicians would even accept this proof. After all, no human could possibly check it was true. What if the algorithm used was incorrect, or there was a glitch in the machine verifying the problem.</p>
+                    <p>Mathematicians generally do not like these proofs, as they do not add any beauty or understanding to a problem. Despite this, mathematical problems do not care. Since Appel and Haken opened the door, there are now many examples of large proofs by exhaustion being computer verified. This has become an important weapon in a mathematician's problem-solving arsenal. Perhaps there is an elementary proof of the four colour theorem, but for now it remains a mystery, and only with the help of computers can we know it to be true.</p>
+                    <p>Strikingly, what Appel and Harken had done was an excellent example of computational thinking. They had <b>decomposed</b> the problem into 1,500 separate cases, and written an <b>algorithm</b> to colour the cases and check the results. Perhaps they were already familiar with similar concepts through a separate study of computing, allowing them to <b>recognise</b> that they could solve a large proof by exhaustion in this way. They also showed that all maps could be reduced to a smaller set of mathematical graphs, which <b>abstracted</b> away unnecessary detail.</p>
+                </div>
+            </article>
+            <div class="video-wrapper">            
+                <p>For more information on the mathematics of the Four Colour Theorem, check out this video by Numberphile:</p>
+                <iframe src="https://www.youtube.com/embed/NgbK43jB4rQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Numberphile Four Colour Map Video</iframe>
+                <!--https://www.w3schools.com/html/html_youtube.asp -->
+            </div>
+        </main>
+        <footer>
+            <div class="left half">
+                <h6>Website by James Alexander Tapp. Submitted for assessment on 4/11/2022</h6>
+                <h6>This site was created to showcase the contents of module CMT119 - Computational Thinking, MSc Computing Cardiff University.</h6>
+            </div>
+            <div class="right half">
+                <h6>C22076087</h6>
+            </div>
+        </footer>
+    </body>
+</html>
